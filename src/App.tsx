@@ -1,8 +1,13 @@
+import Header from './components/Header';
+
+import { Container } from './utils/styles';
+
 const App: React.FC = () => {
   return (
-    <div className="App">
-      <p>hello world</p>
-    </div>
+    <Container className="App">
+      <Container className="yellow-bg" />
+      <Header />
+    </Container>
   );
 };
 

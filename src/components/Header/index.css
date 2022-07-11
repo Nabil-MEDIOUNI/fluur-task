@@ -1,0 +1,47 @@
+.header {
+  height: 45px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 28px 100px;
+  gap: 10px;
+  background: #ffffff;
+}
+
+.header .lab_world {
+  padding-right: 251px;
+}
+
+.header .lang_btns {
+  display: flex;
+}
+
+.header .lang_btns button {
+  font-size: 18px;
+  color: #969696;
+  outline: none;
+  border: none;
+  background: none;
+  font-family: lato-bold;
+}
+
+.header .lang_btns button:last-child {
+  padding-left: 12px;
+}
+
+.header .lang_btns .active {
+  color: #000;
+}
+
+@media only screen and (max-width: 920px) {
+  .header {
+    padding: 28px 15px;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  .header .lab_world {
+    display: none;
+  }
+}
