@@ -10,6 +10,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   font-family: lato;
+  overflow: hidden;
 }
 
 .yellow-bg {
@@ -18,8 +19,29 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgb(255, 166, 5, 0.7);
+  background-color: rgba(255, 143, 5, 0.75);
   z-index: -1;
+}
+
+.raining_circles .field {
+  height: 100vh;
+  position: relative;
+  z-index: -1;
+}
+
+.dot {
+  opacity: 0.8;
+  border-radius: 50%;
+  position: absolute;
+}
+
+iframe {
+  pointer-events: none;
+}
+
+@font-face {
+  font-family: lato-thin;
+  src: url(./assets/fonts/Lato-Thin.ttf);
 }
 
 @font-face {

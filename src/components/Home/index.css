@@ -1,0 +1,60 @@
+.home {
+  position: absolute;
+  left: 100px;
+  top: 50%;
+  transform: translate(0%, -50%);
+}
+
+.home .title {
+  font-size: 74px;
+  font-family: lato-thin;
+}
+
+.home .title span {
+  font-family: lato-bold;
+}
+
+.home .description {
+  font-size: 24px;
+  font-family: lato-light;
+  width: 45%;
+  padding-top: 16px;
+}
+
+.home button {
+  padding: 18px 64px;
+  gap: 10px;
+  background: rgba(255, 143, 5, 0.75);
+  border-radius: 50px;
+  font-size: 18px;
+  margin-top: 74px;
+  cursor: pointer;
+  border: none;
+}
+
+@media only screen and (max-width: 920px) {
+  .home {
+    left: 15px;
+  }
+  .home .description {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  .home .title {
+    font-size: 50px;
+  }
+  .home .description {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .home .title {
+    font-size: 35px;
+  }
+  .home .description {
+    font-size: 18px;
+  }
+}

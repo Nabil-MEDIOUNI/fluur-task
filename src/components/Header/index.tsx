@@ -1,3 +1,5 @@
+import React from 'react';
+
 import { useState } from 'react';
 
 import { BoldTypography, Container } from '../../utils/styles';
@@ -11,7 +13,7 @@ const Header: React.FC = () => {
 
   return (
     <Container className="header">
-      <img src={LOGO} alt="" />
+      <img className="logo" src={LOGO} alt="" />
       <Container className="lang_btns">
         <BoldTypography className="lab_world">Lab World</BoldTypography>
         <button

@@ -1,0 +1,107 @@
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  background: #fff;
+  z-index: -1;
+}
+
+.menu-toggle {
+  background: none;
+  outline: none;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  z-index: 999;
+  cursor: pointer;
+}
+
+.menu-toggle .circle {
+  background-color: #fff;
+  width: 104px;
+  height: 104px;
+  border-radius: 50%;
+}
+
+.menu-toggle p {
+  font-size: 32px;
+  padding-top: 18px;
+}
+
+.mixing_lab {
+  position: absolute;
+  left: 100px;
+  top: 55%;
+  transform: translate(0%, -50%);
+}
+
+.mixing_lab .title {
+  font-size: 74px;
+  font-family: lato-thin;
+}
+
+.mixing_lab .title span {
+  font-family: lato-bold;
+}
+
+.mixing_lab .description {
+  font-size: 24px;
+  font-family: lato-light;
+  width: 60%;
+  padding-top: 16px;
+}
+
+.mixing_lab button {
+  padding: 18px 64px;
+  gap: 10px;
+  background: rgba(255, 143, 5, 0.75);
+  border-radius: 50px;
+  font-size: 18px;
+  margin-top: 74px;
+  cursor: pointer;
+  border: none;
+}
+
+@media only screen and (max-width: 920px) {
+  .menu-toggle {
+    top: 80%;
+  }
+  .mixing_lab {
+    left: 15px;
+  }
+  .mixing_lab .description {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  .mixing_lab .title {
+    font-size: 50px;
+  }
+  .mixing_lab .description {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .mixing_lab .title {
+    font-size: 35px;
+  }
+  .mixing_lab .description {
+    font-size: 18px;
+  }
+}
